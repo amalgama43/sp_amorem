@@ -3,12 +3,36 @@
 @burlfonts: "../fonts/";
 @import "fonts/proxima.less";
 
+//saike comment:
+//желательно, чтобы все эти импорты были внутри рутового класса
+//для того чтобы они применялись только внутри одного главного контейнера
+//вроде того:
+/*
+  .sailplay_wrapper {
+    @import "bootstrap/normalize.less";
+    @import "bootstrap/mixins.less";
+    @import "bootstrap/variables.less";
+    @import "bootstrap/scaffolding.less";
+
+
+    @import "modules/own-variables.less";
+    @import "modules/own-mixins.less";
+    @import "modules/base.less";
+    @import "modules/common-layout.less";
+    @import "modules/common-forms-elems.less";
+
+    //pages
+    @import "pages/index.less";
+
+    @import "plugins/slick.less";
+  {
+*/
+
 // bootstrap
 @import "bootstrap/normalize.less";
 @import "bootstrap/mixins.less";
 @import "bootstrap/variables.less";
 @import "bootstrap/scaffolding.less";
-
 
 @import "modules/own-variables.less";
 @import "modules/own-mixins.less";
@@ -21,14 +45,14 @@
 
 @import "plugins/slick.less";
 
+@media (max-width: @screen-md-max) {
+}
 
+@media (max-width: @screen-sm-max) {
+}
 
+@media (max-width: @screen-xs-max) {
+}
 
-		@media (max-width: @screen-md-max) {
-		}
-		@media (max-width: @screen-sm-max) {
-		}
-		@media (max-width: @screen-xs-max) {
-		}
-		@media (max-width: (@screen-xs-min - 1px)) {
-		}
+@media (max-width: (@screen-xs-min - 1px)) {
+}
