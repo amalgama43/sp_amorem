@@ -1,0 +1,19 @@
+/* base */
+body, html {
+	width: 100%;
+	height: 100%;
+}
+body {
+	background-color: @body-back;
+	color: @color-text-main;
+  	line-height: 1.42857143;
+  	font-family: 'proxima_nova';
+	font-weight: 400;
+	font-style: normal;
+	a {.alink(@color-link, @color-link-hover);}
+	-webkit-font-smoothing: subpixel-antialiased !important;
+}
+a, a:hover, a:focus {
+	text-decoration: none;
+	outline: none;
+}
