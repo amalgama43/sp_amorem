@@ -90,4 +90,35 @@ $(document).ready(function() {
             opacity: 0.5
         });
     });
+
+    $('.js-open-about').click(function(e) {
+        e.preventDefault();
+        var target = $('.js-about-popup');
+        target.bPopup({
+            speed: 450,
+            transition: 'fadeIn',
+            closeClass: 'js-close-popup',
+            positionStyle: 'absolute',
+            follow: [true,false],
+            modal: true,
+            modalClose: true,
+            modalColor: '#776AC5',
+            opacity: 0.9
+        });
+    });
+    $('[data-opengift]').click(function(e) {
+        e.preventDefault();
+        var target = $('[data-giftpopup="' + $(this).data('opengift') + '"]');
+        target.bPopup({
+            speed: 450,
+            transition: 'fadeIn',
+            closeClass: 'js-close-popup',
+            positionStyle: 'absolute',
+            follow: [true,false],
+            modal: true,
+            modalClose: true,
+            modalColor: '#000000',
+            opacity: 0.5
+        });
+    });
 });

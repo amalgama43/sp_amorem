@@ -26,11 +26,8 @@
             <div class="sp_header__right">
                 <div class="sp_header__hd">Бонусная программа</div>
                 <div class="sp_header__ttl">Совершайте покупки, выполняйте задания, копите гармонии и меняйте их на уютные подарки</div>
-                <div class="sp_cmn-btn sp_header__btn" ontouchstart="">
+                <div class="sp_cmn-btn sp_header__btn js-open-about" ontouchstart="">
                     Подробнее
-                    <div class="sp_cmn-hint sp_header__hint">
-                        Любите получать подарки? А мы любим их дарить! Принимайте участие в бонусной программе Amorem, которая позволяет нашим постоянным клиентам получать бонусные баллы и обмени-вать их на по-дарки от Amorem. Как работает данная программа? Вы регистрируетесь, совершаете покупки, выполняете интересные задания и получаете Гармонии (бонусные баллы). Чем больше покупок и выполненных заданий, тем больше Гармоний. Накапливаете необходимое количество Гармоний и обмениваете их на подарки.
-                    </div>
                 </div>
             </div>
             <!-- /right -->
@@ -218,7 +215,7 @@
     	                    <div class="sp_gifts-slider__slide-ttl">Парные Крылья, комплект из двух браслетов.</div>
     	                    <div class="sp_gifts-slider__slide-val">150 гармоний</div>
     	                    <div class="sp_gifts-slider__slide-over">
-    	                    	<div class="sp_cmn-btn sp_gifts-slider__btn">Получить</div>
+    	                    	<div class="sp_cmn-btn sp_gifts-slider__btn" data-opengift="1">Получить</div>
     	                    </div>
                         </div>
                     </div>
@@ -231,7 +228,7 @@
     	                    <div class="sp_gifts-slider__slide-ttl">Парные Крылья, комплект из двух браслетов.</div>
     	                    <div class="sp_gifts-slider__slide-val">150 гармоний</div>
     	                    <div class="sp_gifts-slider__slide-over">
-    	                    	<div class="sp_cmn-btn sp_gifts-slider__btn">Получить</div>
+    	                    	<div class="sp_cmn-btn sp_gifts-slider__btn" data-opengift="2">Получить</div>
     	                    </div>
                         </div>
                     </div>
@@ -244,7 +241,7 @@
     	                    <div class="sp_gifts-slider__slide-ttl">Парные Крылья, комплект из двух браслетов.</div>
     	                    <div class="sp_gifts-slider__slide-val">150 гармоний</div>
     	                    <div class="sp_gifts-slider__slide-over">
-    	                    	<div class="sp_cmn-btn sp_gifts-slider__btn">Получить</div>
+    	                    	<div class="sp_cmn-btn sp_gifts-slider__btn" data-opengift="3">Получить</div>
     	                    </div>
                         </div>
                     </div>
@@ -257,7 +254,7 @@
     	                    <div class="sp_gifts-slider__slide-ttl">Парные Крылья, комплект из двух браслетов.</div>
     	                    <div class="sp_gifts-slider__slide-val">150 гармоний</div>
     	                    <div class="sp_gifts-slider__slide-over">
-    	                    	<div class="sp_cmn-btn sp_gifts-slider__btn">Получить</div>
+    	                    	<div class="sp_cmn-btn sp_gifts-slider__btn" data-opengift="4">Получить</div>
     	                    </div>
                         </div>
                     </div>
@@ -273,7 +270,7 @@
         	<div class="sp_collect-slider js-sp-slider">
                         
                 <div>
-                	<div ontouchstart="" class="sp_collect-slider__slide">
+                	<div ontouchstart="" class="sp_collect-slider__slide" ontouchstart="">
                 		<div class="sp_collect-slider__img">
                 			<div class="sp_collect-slider__img-inner this-active" style="background-image: url('image/collect-01.svg');"></div>
                 			<div class="sp_collect-slider__img-inner this-disabled" style="background-image: url('image/collect-01-dis.svg');"></div>
@@ -284,7 +281,7 @@
                 	</div>
                 </div>
                 <div>
-                	<div ontouchstart="" class="sp_collect-slider__slide">
+                	<div ontouchstart="" class="sp_collect-slider__slide" ontouchstart="">
                 		<div class="sp_collect-slider__img">
                 			<div class="sp_collect-slider__img-inner this-active" style="background-image: url('image/collect-02.svg');"></div>
                 			<div class="sp_collect-slider__img-inner this-disabled" style="background-image: url('image/collect-02-dis.svg');"></div>
@@ -295,7 +292,7 @@
                 	</div>
                 </div>
                 <div>
-                	<div ontouchstart="" class="sp_collect-slider__slide">
+                	<div ontouchstart="" class="sp_collect-slider__slide" ontouchstart="">
                 		<div class="sp_collect-slider__img">
                 			<div class="sp_collect-slider__img-inner this-active" style="background-image: url('image/collect-03.svg');"></div>
                 			<div class="sp_collect-slider__img-inner this-disabled" style="background-image: url('image/collect-03-dis.svg');"></div>
@@ -457,11 +454,52 @@
                 <div class="sp_hist-popup-itm__date">30 июля 15:34</div>
                 <div class="sp_hist-popup-itm__info">Покупка на 2590 руб.</div>
             </div>
+
+            <div class="sp_cmn-paginate">
+                <div class="sp_cmn-paginate__inner">
+                    <a href="#" class="sp_cmn-paginate__arrow this-left"><</a>
+                    <a href="#" class="sp_cmn-paginate__arrow this-right">></a>
+
+                    <a href="#" class="sp_cmn-paginate__itm this-active">1</a>
+                    <a href="#" class="sp_cmn-paginate__itm">2</a>
+                    <a href="#" class="sp_cmn-paginate__itm">3</a>
+                    <a href="#" class="sp_cmn-paginate__itm">4</a>
+                    <span class="sp_cmn-paginate__itm sp_cmn-paginate__itm_delimeter">...</span>
+                    <a href="#" class="sp_cmn-paginate__itm">10</a>
+                </div>
+            </div>
 			
 		</div>
 	</div>
 
 
+    <div class="sp_gift-popup" data-giftpopup="1" style="display: none;">
+        <div class="sp_gift-popup__img" style="background-image: url(image/gift-01.jpg);"></div>
+        <div class="sp_gift-popup__ttl">Не хватает 50 баллов</div>
+    </div>
+    <div class="sp_gift-popup" data-giftpopup="2" style="display: none;">
+        <div class="sp_gift-popup__img" style="background-image: url(image/gift-02.jpg);"></div>
+        <div class="sp_gift-popup__ttl">Подарок добавлен в корзину! 150 баллов будет списано с Вашего бонусного счета при оплате заказа</div>
+        <div class="sp_gift-popup__btn sp_cmn-btn js-close-popup">Хорошо</div>
+    </div>
+    <div class="sp_gift-popup" data-giftpopup="3" style="display: none;">
+        <div class="sp_gift-popup__img" style="background-image: url(image/gift-03.jpg);"></div>
+        <div class="sp_gift-popup__ttl">Не хватает 50 баллов</div>
+    </div>
+    <div class="sp_gift-popup" data-giftpopup="4" style="display: none;">
+        <div class="sp_gift-popup__img" style="background-image: url(image/gift-04.jpg);"></div>
+        <div class="sp_gift-popup__ttl">Подарок добавлен в корзину! 150 баллов будет списано с Вашего бонусного счета при оплате заказа</div>
+        <div class="sp_gift-popup__btn sp_cmn-btn js-close-popup">Хорошо</div>
+    </div>
+
+    <div class="sp_about-popup js-about-popup" style="display: none;">
+        <div class="sp_about-popup__inner js-close-popup">
+            <div class="sp_about-popup__head">Любите получать подарки? <br>А мы любим их дарить!</div>
+            <div class="sp_about-popup__txt">
+                Принимайте участие в бонусной программе Amorem, которая позволяет нашим постоянным клиентам получать бонусные баллы и обменивать их на подарки от Amorem. Как работает данная программа? Вы регистрируетесь, совершаете покупки, выполняете интересные задания и получаете Гармонии (бонусные баллы). Чем больше покупок и выполненных заданий, тем больше Гармоний. Накапливаете необходимое количество Гармоний и обмениваете их на подарки.
+            </div>
+        </div>
+    </div>
 
 </div>
 <!-- /sp_widget -->
