@@ -3,29 +3,29 @@
 @burlfonts: "../fonts/";
 @import "fonts/proxima.less";
 
-// bootstrap
 @import "bootstrap/mixins.less";
 @import "bootstrap/variables.less";
+
 @import "modules/own-mixins.less";
 @import "modules/own-variables.less";
 
 .sp_wrapper {
+  //инкапуслировал общий ресет
   @import "bootstrap/normalize.less";
   @import "bootstrap/scaffolding.less";
 
-  .sp-block-reset();
 
+  .sp-block-reset();
 
   @import "modules/common-layout.less";
   @import "modules/common-forms-elems.less";
-
-  //pages
   @import "pages/index.less";
-
 }
-@import "pages/common-elements.less";
+
 //plugins
 @import "plugins/slick.less";
-//popup подключаем отдельно они в корне боди добавляются
+//popup подключаем вне контейнера они в корне боди добавляются
 @import "pages/popups.less";
+//так же как и кнопки - они в попапах используются
+@import "pages/common-elements.less";
 

@@ -961,7 +961,7 @@
 }
 .sp_wrapper .sp_task-sec {
   margin: 20px auto;
-  padding: 0 15px;
+  padding: 20px 15px;
   max-width: 1330px;
 }
 .sp_wrapper .sp_task-sec__head {
@@ -1004,37 +1004,15 @@
   position: relative;
   height: 150px;
   overflow: hidden;
-  background-color: #fff;
   background-color: #FAE3F6;
   border-radius: 5px;
-  cursor: pointer;
   color: #000;
 }
 .sp_wrapper .sp_task-cell:hover {
-  background-color: #B76ED6;
-  color: #fff;
   box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.4);
 }
-.sp_wrapper .sp_task-cell:hover .sp_task-cell__count {
-  color: #fff;
-}
-.sp_wrapper .sp_task-cell:hover .sp_task-cell__icon.this-icon-01 {
-  background-image: url("../image/task-icon-01-hover.svg");
-}
-.sp_wrapper .sp_task-cell:hover .sp_task-cell__icon.this-icon-02 {
-  background-image: url("../image/task-icon-02-hover.svg");
-}
-.sp_wrapper .sp_task-cell:hover .sp_task-cell__icon.this-icon-03 {
-  background-image: url("../image/task-icon-03-hover.svg");
-}
-.sp_wrapper .sp_task-cell:hover .sp_task-cell__icon.this-icon-04 {
-  background-image: url("../image/task-icon-04-hover.svg");
-}
-.sp_wrapper .sp_task-cell:hover .sp_task-cell__icon.this-icon-05 {
-  background-image: url("../image/task-icon-05-hover.svg");
-}
-.sp_wrapper .sp_task-cell:hover .sp_task-cell__icon.this-icon-06 {
-  background-image: url("../image/task-icon-06-hover.svg");
+.sp_wrapper .sp_task-cell:hover .sp_task-cell__over {
+  display: block;
 }
 .sp_wrapper .sp_task-cell__icon {
   position: relative;
@@ -1095,6 +1073,21 @@
   font-weight: 700;
   color: #D463C1;
   margin-top: 15px;
+}
+.sp_wrapper .sp_task-cell__over {
+  display: none;
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  right: 150px;
+  background-color: #FAE3F6;
+  padding-top: 55px;
+}
+.sp_wrapper .sp_task-cell__btn {
+  width: 170px;
+  margin: 0 auto;
+  border-color: #D463C1;
 }
 .sp_wrapper .sp_gifts-slider__slide {
   width: 300px;
@@ -1303,68 +1296,6 @@
   margin-top: 30px;
   width: 310px;
   margin-left: -155px;
-}
-.sp_cmn-btn {
-  display: block;
-  position: relative;
-  max-width: 100%;
-  height: 44px;
-  border: 1px solid #CCCCCC;
-  border-radius: 4px;
-  font-size: 14px;
-  line-height: 1;
-  text-align: center;
-  padding-top: 15px;
-  cursor: pointer;
-  color: #252525;
-}
-.sp_cmn-btn:link {
-  color: #252525;
-}
-.sp_cmn-btn:visited {
-  color: #252525;
-}
-.sp_cmn-btn:hover {
-  color: #252525;
-}
-.sp_cmn-btn:active {
-  color: #252525;
-}
-.sp_cmn-btn:hover {
-  background-color: rgba(0, 0, 0, 0.05);
-}
-.sp_cmn-hint {
-  position: absolute;
-  z-index: 2;
-  background-color: #fff;
-  box-shadow: 0px 0 25px rgba(0, 0, 0, 0.4);
-  border-radius: 5px;
-  width: 386px;
-  left: 50%;
-  margin-left: -193px;
-  padding: 25px 30px;
-  font-size: 14px;
-  text-align: left;
-  line-height: 22px;
-  color: #000;
-}
-.sp_cmn-hint__head {
-  font-size: 25px;
-  font-weight: 700;
-  margin-bottom: 10px;
-}
-.sp_cmn-hint:after {
-  content: "";
-  display: block;
-  position: absolute;
-  width: 0;
-  height: 0;
-  border-left: 16px solid transparent;
-  border-right: 16px solid transparent;
-  border-bottom: 15px solid #fff;
-  bottom: 100%;
-  left: 50%;
-  margin-left: -16px;
 }
 /* Slider */
 .slick-slider {
@@ -1976,4 +1907,66 @@
 }
 .sp_cmn-paginate__arrow:hover {
   opacity: 1;
+}
+.sp_cmn-btn {
+  display: block;
+  position: relative;
+  max-width: 100%;
+  height: 44px;
+  border: 1px solid #CCCCCC;
+  border-radius: 4px;
+  font-size: 14px;
+  line-height: 1;
+  text-align: center;
+  padding-top: 15px;
+  cursor: pointer;
+  color: #252525;
+}
+.sp_cmn-btn:link {
+  color: #252525;
+}
+.sp_cmn-btn:visited {
+  color: #252525;
+}
+.sp_cmn-btn:hover {
+  color: #252525;
+}
+.sp_cmn-btn:active {
+  color: #252525;
+}
+.sp_cmn-btn:hover {
+  background-color: rgba(0, 0, 0, 0.05);
+}
+.sp_cmn-hint {
+  position: absolute;
+  z-index: 2;
+  background-color: #fff;
+  box-shadow: 0px 0 25px rgba(0, 0, 0, 0.4);
+  border-radius: 5px;
+  width: 386px;
+  left: 50%;
+  margin-left: -193px;
+  padding: 25px 30px;
+  font-size: 14px;
+  text-align: left;
+  line-height: 22px;
+  color: #000;
+}
+.sp_cmn-hint__head {
+  font-size: 25px;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+.sp_cmn-hint:after {
+  content: "";
+  display: block;
+  position: absolute;
+  width: 0;
+  height: 0;
+  border-left: 16px solid transparent;
+  border-right: 16px solid transparent;
+  border-bottom: 15px solid #fff;
+  bottom: 100%;
+  left: 50%;
+  margin-left: -16px;
 }

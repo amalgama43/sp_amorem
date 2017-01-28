@@ -562,7 +562,7 @@
 
 .sp_task-sec {
 	margin: 20px auto;
-	padding: 0 15px;
+	padding: 20px 15px;
 	max-width: 1330px;
 	&__head {
 		font-size: 25px;
@@ -599,29 +599,30 @@
 	position: relative;
 	height: 150px;
 	overflow: hidden;
-	background-color: #fff;
-
-
 	background-color: #FAE3F6;
 	border-radius: 5px;
 
-	cursor: pointer;
+	//cursor: pointer;
 
 
 	color: #000;
 	&:hover {
-		background-color: #B76ED6;
-		color: #fff;
-		.sp_task-cell__count {
-			color: #fff;
-		}
+		//background-color: #B76ED6;
+		//color: #fff;
+		//.sp_task-cell__count {
+			//color: #fff;
+		//}
 		box-shadow: 0px 0px 20px rgba(0,0,0,0.4);
-		.sp_task-cell__icon.this-icon-01 {background-image: url("@{burl}task-icon-01-hover.svg");}
-		.sp_task-cell__icon.this-icon-02 {background-image: url("@{burl}task-icon-02-hover.svg");}
-		.sp_task-cell__icon.this-icon-03 {background-image: url("@{burl}task-icon-03-hover.svg");}
-		.sp_task-cell__icon.this-icon-04 {background-image: url("@{burl}task-icon-04-hover.svg");}
-		.sp_task-cell__icon.this-icon-05 {background-image: url("@{burl}task-icon-05-hover.svg");}
-		.sp_task-cell__icon.this-icon-06 {background-image: url("@{burl}task-icon-06-hover.svg");}
+		//.sp_task-cell__icon.this-icon-01 {background-image: url("@{burl}task-icon-01-hover.svg");}
+		//.sp_task-cell__icon.this-icon-02 {background-image: url("@{burl}task-icon-02-hover.svg");}
+		//.sp_task-cell__icon.this-icon-03 {background-image: url("@{burl}task-icon-03-hover.svg");}
+		//.sp_task-cell__icon.this-icon-04 {background-image: url("@{burl}task-icon-04-hover.svg");}
+		//.sp_task-cell__icon.this-icon-05 {background-image: url("@{burl}task-icon-05-hover.svg");}
+		//.sp_task-cell__icon.this-icon-06 {background-image: url("@{burl}task-icon-06-hover.svg");}
+
+		.sp_task-cell__over {
+			display: block;
+		}
 	}
 	&__icon {
 		position: relative;
@@ -671,6 +672,24 @@
 		color: #D463C1;
 
 		margin-top: 15px;
+	}
+
+	&__over {
+		display: none;
+		position: absolute;
+		left: 0;
+		top: 0;
+		bottom:0;
+		right: 150px;
+		background-color: #FAE3F6;
+
+		padding-top: 55px;
+	}
+
+	&__btn {
+		width: 170px;
+		margin: 0 auto;
+		border-color: #D463C1;
 	}
 
 	
