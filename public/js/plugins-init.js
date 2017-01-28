@@ -27,6 +27,7 @@ $(document).ready(function() {
 
         }
 
+
         function activateSlider(slider) {
             slider.slick({
                 adaptiveHeight: true,

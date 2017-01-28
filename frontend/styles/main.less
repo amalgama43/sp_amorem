@@ -10,11 +10,11 @@
 @import "modules/own-variables.less";
 
 .sp_wrapper {
+  @import "bootstrap/normalize.less";
+  @import "bootstrap/scaffolding.less";
 
   .sp-block-reset();
 
-  @import "bootstrap/normalize.less";
-  @import "bootstrap/scaffolding.less";
 
   @import "modules/common-layout.less";
   @import "modules/common-forms-elems.less";
@@ -22,8 +22,10 @@
   //pages
   @import "pages/index.less";
 
-  //plugins
-  @import "plugins/slick.less";
 }
+
+//plugins
+@import "plugins/slick.less";
+//popup подключаем отдельно они в корне боди добавляются
 @import "pages/popups.less";
 

@@ -13,6 +13,12 @@
   font-style: normal;
 }
 .sp_wrapper {
+  /*! normalize.css v3.0.0 | MIT License | git.io/normalize */
+  /*
+  saike comment:
+  эти стили попадают в глобальный скоуп и могут нарушить работу внешнего приложения.
+  смотри коммент в ../main.less
+ */
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
@@ -20,62 +26,8 @@
   font-size: 14px;
   line-height: 1;
   font-weight: 400;
-  /*! normalize.css v3.0.0 | MIT License | git.io/normalize */
-  /*
-  saike comment:
-  эти стили попадают в глобальный скоуп и могут нарушить работу внешнего приложения.
-  смотри коммент в ../main.less
- */
   /* forms */
   /* end forms */
-  /* Slider */
-}
-.sp_wrapper:before,
-.sp_wrapper:after {
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
-  box-sizing: border-box;
-}
-.sp_wrapper * {
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
-  box-sizing: border-box;
-}
-.sp_wrapper *:before,
-.sp_wrapper *:after {
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
-  box-sizing: border-box;
-}
-.sp_wrapper a,
-.sp_wrapper a:hover,
-.sp_wrapper a:focus {
-  text-decoration: none;
-  outline: none;
-}
-.sp_wrapper h1,
-.sp_wrapper h2,
-.sp_wrapper h3,
-.sp_wrapper h4,
-.sp_wrapper h5,
-.sp_wrapper h6,
-.sp_wrapper ul,
-.sp_wrapper ol,
-.sp_wrapper p {
-  margin: 0;
-  padding: 0;
-}
-.sp_wrapper h1,
-.sp_wrapper h2,
-.sp_wrapper h3,
-.sp_wrapper h4,
-.sp_wrapper h5,
-.sp_wrapper h6 {
-  font-weight: normal;
-}
-.sp_wrapper ul,
-.sp_wrapper ol {
-  list-style: none;
 }
 .sp_wrapper html {
   font-family: sans-serif;
@@ -344,6 +296,53 @@
   overflow: hidden;
   clip: rect(0, 0, 0, 0);
   border: 0;
+}
+.sp_wrapper:before,
+.sp_wrapper:after {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+.sp_wrapper * {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+.sp_wrapper *:before,
+.sp_wrapper *:after {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+.sp_wrapper a,
+.sp_wrapper a:hover,
+.sp_wrapper a:focus {
+  text-decoration: none;
+  outline: none;
+}
+.sp_wrapper h1,
+.sp_wrapper h2,
+.sp_wrapper h3,
+.sp_wrapper h4,
+.sp_wrapper h5,
+.sp_wrapper h6,
+.sp_wrapper ul,
+.sp_wrapper ol,
+.sp_wrapper p {
+  margin: 0;
+  padding: 0;
+}
+.sp_wrapper h1,
+.sp_wrapper h2,
+.sp_wrapper h3,
+.sp_wrapper h4,
+.sp_wrapper h5,
+.sp_wrapper h6 {
+  font-weight: normal;
+}
+.sp_wrapper ul,
+.sp_wrapper ol {
+  list-style: none;
 }
 .sp_wrapper .sp_l-section-wrap {
   position: relative;
@@ -1367,7 +1366,8 @@
   width: 310px;
   margin-left: -155px;
 }
-.sp_wrapper .slick-slider {
+/* Slider */
+.slick-slider {
   position: relative;
   display: block;
   -moz-box-sizing: border-box;
@@ -1382,75 +1382,75 @@
   touch-action: pan-y;
   -webkit-tap-highlight-color: transparent;
 }
-.sp_wrapper .slick-list {
+.slick-list {
   position: relative;
   overflow: hidden;
   display: block;
   margin: 0;
   padding: 0;
 }
-.sp_wrapper .slick-list:focus {
+.slick-list:focus {
   outline: none;
 }
-.sp_wrapper .slick-list.dragging {
+.slick-list.dragging {
   cursor: pointer;
   cursor: hand;
 }
-.sp_wrapper .slick-slider .slick-track,
-.sp_wrapper .slick-slider .slick-list {
+.slick-slider .slick-track,
+.slick-slider .slick-list {
   -webkit-transform: translate3d(0, 0, 0);
   -moz-transform: translate3d(0, 0, 0);
   -ms-transform: translate3d(0, 0, 0);
   -o-transform: translate3d(0, 0, 0);
   transform: translate3d(0, 0, 0);
 }
-.sp_wrapper .slick-track {
+.slick-track {
   position: relative;
   left: 0;
   top: 0;
   display: block;
 }
-.sp_wrapper .slick-track:before,
-.sp_wrapper .slick-track:after {
+.slick-track:before,
+.slick-track:after {
   content: "";
   display: table;
 }
-.sp_wrapper .slick-track:after {
+.slick-track:after {
   clear: both;
 }
-.slick-loading .sp_wrapper .slick-track {
+.slick-loading .slick-track {
   visibility: hidden;
 }
-.sp_wrapper .slick-slide {
+.slick-slide {
   float: left;
   height: 100%;
   min-height: 1px;
   display: none;
 }
-[dir="rtl"] .sp_wrapper .slick-slide {
+[dir="rtl"] .slick-slide {
   float: right;
 }
-.sp_wrapper .slick-slide img {
+.slick-slide img {
   display: block;
 }
-.sp_wrapper .slick-slide.slick-loading img {
+.slick-slide.slick-loading img {
   display: none;
 }
-.sp_wrapper .slick-slide.dragging img {
+.slick-slide.dragging img {
   pointer-events: none;
 }
-.slick-initialized .sp_wrapper .slick-slide {
+.slick-initialized .slick-slide {
   display: block;
 }
-.slick-loading .sp_wrapper .slick-slide {
+.slick-loading .slick-slide {
   visibility: hidden;
 }
-.slick-vertical .sp_wrapper .slick-slide {
+.slick-vertical .slick-slide {
   display: block;
   height: auto;
   border: 1px solid transparent;
 }
-.sp_wrapper .slick-arrow.slick-hidden {
+.slick-arrow.slick-hidden {
   display: none;
 }
 .sp_status-popup {
