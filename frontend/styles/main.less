@@ -1,0 +1,29 @@
+// basic url adress
+@burl: "../image/";
+@burlfonts: "../fonts/";
+@import "fonts/proxima.less";
+
+// bootstrap
+@import "bootstrap/mixins.less";
+@import "bootstrap/variables.less";
+@import "modules/own-mixins.less";
+@import "modules/own-variables.less";
+
+.sp_wrapper {
+
+  .sp-block-reset();
+
+  @import "bootstrap/normalize.less";
+  @import "bootstrap/scaffolding.less";
+
+  @import "modules/common-layout.less";
+  @import "modules/common-forms-elems.less";
+
+  //pages
+  @import "pages/index.less";
+
+  //plugins
+  @import "plugins/slick.less";
+}
+@import "pages/popups.less";
+
